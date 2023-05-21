@@ -1,6 +1,6 @@
 streamlit
 pandas
-smtplib==0.1.1
+secure-smtplib==0.1.1
 email.mime.multipart
 email.mime.base
 email
