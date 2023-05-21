@@ -286,7 +286,7 @@ if col2.button('Submit'):
 
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('solarapp98@gmail.com', 'mail_pass')
+    server.login('solarapp98@gmail.com', mail_pass)
     text = msg.as_string()
     server.sendmail('solarapp98@gmail.com', 'minutes2energy@gmail.com', text)
     server.quit()
