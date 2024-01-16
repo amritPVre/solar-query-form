@@ -84,9 +84,9 @@ st.write('\n')
 
 col1, col2 = st.columns([1,1])
 with col1:
-    lat=st.number_input('latitude',22.5)
+    lat=st.number_input('latitude',min_value=-90.0, max_value=90.0, value=22.7)
 with col2:
-    lon=st.number_input('longitude',73.8)
+    lon=st.number_input('longitude',min_value=-180.0, max_value=180.0, value=73.7)
 
 
 df_panels = pd.read_csv('solar_panel_list.csv')
